@@ -170,6 +170,14 @@ article li img {
 
 @media all and (min-width: 544px) {
   /* make pictures small enough so they can share a line */
+
+  /* share a line */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 24px;
+  }
 }
 
 /* when display is wide enough */
