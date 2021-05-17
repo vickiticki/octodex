@@ -128,6 +128,9 @@ article {
   font-family: 'Alliance No.1';
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+}
+article > img {
 }
 /* put img title and creator on one line */
 article ul {
@@ -172,16 +175,41 @@ article li img {
 
 @media all and (min-width: 544px) {
   /* make pictures small enough so they can share a line */
-  /* article {
-    idek anymore
-    width: 50%;
-  } */
+
+  article {
+    display: flex;
+    margin-right: 24px;
+    max-width: 40%;
+    height: auto;
+  }
   /* share a line */
   section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 24px;
+    /* justify-content: space-between; */
+    /* margin-right: 24px; */
+  }
+}
+@media all and (min-width: 1010px) {
+  /* make pictures small enough so they can share a line */
+  /* article {
+    display: flex;
+    flex-shrink: 2;
+    width: 50%;
+    height: auto;
+  } */
+  article {
+    display: flex;
+    margin-right: 24px;
+    max-width: 28%;
+    height: auto;
+  }
+  /* share a line */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* margin-right: 24px; */
   }
 }
 
